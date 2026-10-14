@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات | TPGaming</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="magale.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="TPGaming" class="logo-img" />
+          <i class="fas fa-gamepad"></i>Gaming <span>TP</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="INDEX.html">خانه</a></li>
+          <li><a href="INDEX.html#categoriesLink">دسته‌بندی‌ها</a></li>
+          <li><a href="magale.html" class="active">مقالات</a></li>
+          <li><a href="#">تخفیف‌ها</a></li>
+          <li><a href="INDEX.html#footerSection">ارتباط با ما</a></li>
+        </ul>
+        <div class="nav-icons">
+          <div class="cart-icon" onclick="window.location.href='INDEX.html'">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="articles-hero">
+      <div class="container">
+        <h1><i class="fas fa-book-open"></i> مقالات TPGaming</h1>
+        <p>
+          جدیدترین مقالات، آموزش‌ها و راهنماهای دنیای گیمینگ و تکنولوژی.
+          هر چیزی که یه گیمر حرفه‌ای باید بدونه، اینجاست.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FILTER BAR ===== -->
+    <section class="container">
+      <div class="filter-bar">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchArticle" placeholder="جستجوی مقاله ..." />
+        </div>
+        <div class="category-buttons" id="articleCategories">
+          <button class="cat-btn active" data-cat="all">همه</button>
+          <button class="cat-btn" data-cat="آموزش">آموزش</button>
+          <button class="cat-btn" data-cat="نقد و بررسی">نقد و بررسی</button>
+          <button class="cat-btn" data-cat="اخبار">اخبار</button>
+          <button class="cat-btn" data-cat="راهنما">راهنما</button>
+          <button class="cat-btn" data-cat="سخت‌افزار">سخت‌افزار</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLES GRID ===== -->
+    <section class="container">
+      <div class="section-title">
+        <i class="fas fa-newspaper"></i>
+        <span>جدیدترین مقالات</span>
+      </div>
+
+      <div class="articles-grid" id="articlesGrid">
+
+        <!-- ==================== کارت مقاله ۱ ==================== -->
+        <article class="article-card" data-cat="آموزش">
+          <a href="articles/console-guide.html" class="article-img-link">
+            <div class="article-img">
+              <img
+                src="images/bodyback.jpg"
+                alt="راهنمای انتخاب کنسول بازی"
+                loading="lazy"
+              />
+              <span class="article-badge">آموزش</span>
+              <span class="article-overlay">
+                <i class="fas fa-arrow-left"></i>
+                مشاهده مقاله
+              </span>
+            </div>
+          </a>
+
+          <div class="article-body">
+            <div class="article-meta">
+              <span><i class="far fa-calendar"></i> ۱۴۰۴/۰۷/۱۵</span>
+              <span><i class="far fa-clock"></i> ۵ دقیقه</span>
+            </div>
+            <h3>
+              <a href="articles/console-guide.html">
+                راهنمای کامل انتخاب کنسول بازی در سال ۱۴۰۴
+              </a>
+            </h3>
+            <p>
+              بین PS5، Xbox Series X و Nintendo Switch کدوم رو بخریم؟
+              توی این مقاله کامل مقایسه کردیم تا راحت تصمیم بگیری.
+            </p>
+            <a href="articles/console-guide.html" class="read-more">
+              ادامه مطلب <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- ==================== کارت مقاله ۲ ==================== -->
+        <article class="article-card" data-cat="نقد و بررسی">
+          <a href="articles/ps5-slim-review.html" class="article-img-link">
+            <div class="article-img">
+              <img
+                src="images/bodyback.jpg"
+                alt="نقد و بررسی PS5 Slim"
+                loading="lazy"
+              />
+              <span class="article-badge">نقد و بررسی</span>
+              <span class="article-overlay">
+                <i class="fas fa-arrow-left"></i>
+                مشاهده مقاله
+              </span>
+            </div>
+          </a>
+
+          <div class="article-body">
+            <div class="article-meta">
+              <span><i class="far fa-calendar"></i> ۱۴۰۴/۰۷/۱۲</span>
+              <span><i class="far fa-clock"></i> ۸ دقیقه</span>
+            </div>
+            <h3>
+              <a href="articles/ps5-slim-review.html">
+                نقد و بررسی کامل PS5 Slim — ارزش خرید داره؟
+              </a>
+            </h3>
+            <p>
+              نسخه اسلیم PS5 با حجم کمتر و طراحی جدید اومده. آیا واقعاً
+              ارزش upgrade داره یا همون نسخه قبلی کافیه؟
+            </p>
+            <a href="articles/ps5-slim-review.html" class="read-more">
+              ادامه مطلب <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- ==================== کارت مقاله ۳ ==================== -->
+        <article class="article-card" data-cat="راهنما">
+          <a href="articles/gaming-headset-guide.html" class="article-img-link">
+            <div class="article-img">
+              <img
+                src="images/bodyback.jpg"
+                alt="راهنمای خرید هدست گیمینگ"
+                loading="lazy"
+              />
+              <span class="article-badge">راهنما</span>
+              <span class="article-overlay">
+                <i class="fas fa-arrow-left"></i>
+                مشاهده مقاله
+              </span>
+            </div>
+          </a>
+
+          <div class="article-body">
+            <div class="article-meta">
+              <span><i class="far fa-calendar"></i> ۱۴۰۴/۰۷/۰۸</span>
+              <span><i class="far fa-clock"></i> ۶ دقیقه</span>
+            </div>
+            <h3>
+              <a href="articles/gaming-headset-guide.html">
+                چطور یه هدست گیمینگ حرفه‌ای انتخاب کنیم؟
+              </a>
+            </h3>
+            <p>
+              صدای فراگیر، میکروفون نویزگیر و راحتی گوش — اینا معیارهای
+              اصلی انتخاب هدست گیمینگ هستن. با ما همراه باش.
+            </p>
+            <a href="articles/gaming-headset-guide.html" class="read-more">
+              ادامه مطلب <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- ==================== کارت مقاله ۴ ==================== -->
+        <article class="article-card" data-cat="سخت‌افزار">
+          <a href="articles/gpu-guide.html" class="article-img-link">
+            <div class="article-img">
+              <img
+                src="images/bodyback.jpg"
+                alt="راهنمای انتخاب کارت گرافیک"
+                loading="lazy"
+              />
+              <span class="article-badge">سخت‌افزار</span>
+              <span class="article-overlay">
+                <i class="fas fa-arrow-left"></i>
+                مشاهده مقاله
+              </span>
+            </div>
+          </a>
+
+          <div class="article-body">
+            <div class="article-meta">
+              <span><i class="far fa-calendar"></i> ۱۴۰۴/۰۷/۰۵</span>
+              <span><i class="far fa-clock"></i> ۱۰ دقیقه</span>
+            </div>
+            <h3>
+              <a href="articles/gpu-guide.html">
+                راهنمای انتخاب کارت گرافیک برای گیمینگ
+              </a>
+            </h3>
+            <p>
+              از RX 580 تا RTX 4090 — کدوم کارت گرافیک برای بودجه و
+              نیاز گیمینگ شما مناسبه؟ همه چیز رو بررسی کردیم.
+            </p>
+            <a href="articles/gpu-guide.html" class="read-more">
+              ادامه مطلب <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- ==================== کارت مقاله ۵ ==================== -->
+        <article class="article-card" data-cat="اخبار">
+          <a href="articles/gaming-news.html" class="article-img-link">
+            <div class="article-img">
+              <img
+                src="images/bodyback.jpg"
+                alt="مهم‌ترین اخبار گیمینگ"
+                loading="lazy"
+              />
+              <span class="article-badge">اخبار</span>
+              <span class="article-overlay">
+                <i class="fas fa-arrow-left"></i>
+                مشاهده مقاله
+              </span>
+            </div>
+          </a>
+
+          <div class="article-body">
+            <div class="article-meta">
+              <span><i class="far fa-calendar"></i> ۱۴۰۴/۰۷/۰۱</span>
+              <span><i class="far fa-clock"></i> ۴ دقیقه</span>
+            </div>
+            <h3>
+              <a href="articles/gaming-news.html">
+                مهم‌ترین اخبار گیمینگ هفته گذشته
+              </a>
+            </h3>
+            <p>
+              بازی‌های جدید معرفی شده، آپدیت‌های بزرگ و شایعات داغ
+              صنعت گیمینگ — همه توی این مقاله.
+            </p>
+            <a href="articles/gaming-news.html" class="read-more">
+              ادامه مطلب <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- ==================== کارت مقاله ۶ ==================== -->
+        <article class="article-card" data-cat="آموزش">
+          <a href="articles/monitor-explained.html" class="article-img-link">
+            <div class="article-img">
+              <img
+                src="images/bodyback.jpg"
+                alt="رفرش ریت و زمان پاسخ‌گویی مانیتور"
+                loading="lazy"
+              />
+              <span class="article-badge">آموزش</span>
+              <span class="article-overlay">
+                <i class="fas fa-arrow-left"></i>
+                مشاهده مقاله
+              </span>
+            </div>
+          </a>
+
+          <div class="article-body">
+            <div class="article-meta">
+              <span><i class="far fa-calendar"></i> ۱۴۰۴/۰۶/۲۵</span>
+              <span><i class="far fa-clock"></i> ۷ دقیقه</span>
+            </div>
+            <h3>
+              <a href="articles/monitor-explained.html">
+                رفرش ریت و زمان پاسخ‌گویی مانیتور یعنی چی؟
+              </a>
+            </h3>
+            <p>
+              165Hz یا 240Hz؟ 1ms یا 5ms؟ این اعداد چیکار می‌کنن و
+              آیا واقعاً توی گیم تأثیر دارن؟ همه چیز رو فهمیدیم.
+            </p>
+            <a href="articles/monitor-explained.html" class="read-more">
+              ادامه مطلب <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- پیام وقتی نتیجه‌ای نیست -->
+      <div class="no-results" id="noResults" style="display:none;">
+        <i class="fas fa-search"></i>
+        <p>هیچ مقاله‌ای با این مشخصات پیدا نشد!</p>
+      </div>
+
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footerSection">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img src="images/logo.jpg" alt="TPGaming" class="logo-img" />
+              <span>TP <em>Gaming</em></span>
+            </div>
+            <p class="footer-about">
+              فروشگاه آنلاین لوازم گیمینگ و دیجیتال با بهترین قیمت و ضمانت اصالت کالا.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">شبکه‌های اجتماعی</h3>
+            <ul class="footer-social">
+              <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> اینستاگرام</a></li>
+              <li><a href="https://t.me/" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i> تلگرام</a></li>
+              <li><a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> واتساپ</a></li>
+              <li><a href="https://youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> یوتیوب</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">تماس با ما</h3>
+            <ul class="footer-contact">
+              <li><i class="fas fa-map-marker-alt"></i> <span>بدون شعبه حضوری</span></li>
+              <li><a href="tel:+989123456789"><i class="fas fa-phone"></i> ۰۹۱۲۳۴۵۶۷۸۹</a></li>
+              <li><a href="mailto:info@tpgaming.ir"><i class="fas fa-envelope"></i> info@tpgaming.ir</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">پشتیبانی</h3>
+            <ul class="footer-links">
+              <li><a href="#"><i class="fas fa-angle-left"></i> سوالات متداول</a></li>
+              <li><a href="#"><i class="fas fa-angle-left"></i> رویه ارسال کالا</a></li>
+              <li><a href="#"><i class="fas fa-angle-left"></i> بازگشت کالا</a></li>
+              <li><a href="#"><i class="fas fa-angle-left"></i> شرایط و قوانین</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>© ۱۴۰۴ - تمامی حقوق برای <strong>TPGaming</strong> محفوظ است.</p>
+          <p class="designer-credit">طراح و کدنویس: <span>پوریا صفار بنیس</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="magale.js"></script>
+</body>
+</html>
